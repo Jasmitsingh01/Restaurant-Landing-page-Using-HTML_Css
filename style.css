@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  min-height: 100vh;
+}
+
+#hero {
+  background: url("images/bg.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+#hero .text {
+  position: absolute;
+  width: 50%;
+  top: 30%;
+  left: 43%;
+}
+
+#navigation {
+  display: flex;
+  gap: 60px;
+}
+
+.buttn {
+  background-color: #ffc200;
+  padding: 20px 53px;
+  font-size: 19px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
+
+#feautres p {
+  color: white;
+}
+
+#feautres h2 {
+  color: #ffc200;
+}
+
+.card-group {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card h2 {
+  font-size: 42px;
+}
+
+.card p {
+  font-size: 17px;
+}
+
+#best-section {
+  text-align: center;
+  padding-top: 10%;
+  padding-inline: 10%;
+}
+
+#oritental-section {
+  background: url("images/oritental-section-background.png") no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding-inline: 10%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: end;
+  padding-bottom: 50px;
+}
+
+#statics-section {
+  padding: 5% 10%;
+  text-align: center;
+  background: url("images/subsricbe-section.png") no-repeat #303030;
+  min-height: 100vh;
+}
+
+.circle-card {
+  min-width: 230px;
+  min-height: 230px;
+  border-radius: 60%;
+  border: 5px solid white;
+  padding: 30px;
+
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.circle-card h3 {
+  color: #ffc200;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.circle-card p {
+  font-size: 29px;
+  font-weight: bold;
+}
+
+#chicken-section {
+  background: url("images/chicken-section.png") no-repeat;
+  background-size: cover;
+  min-height: 105vh;
+  padding-inline: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+#chicken-section .image {
+  justify-self: right;
+}
+
+#discription-section {
+  position: relative;
+  background: url('images/lenor-field.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 110vh;
+  z-index: -2;
+  text-align: center;
+  padding-inline: 10%;
+}
+
+#discription-section .text {
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  top: 20%;
+}
+
+#discription-section::before {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: #ffee0066;
+  z-index: -1;
+}
+
+#subscribe-section {
+  background: url('images/subsricbe-section.png');
+  min-height: 100vh;
+  padding: 5% 10%;
+  text-align: center;
+}
+
+#subscribe-section form {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  width: 50%;
+  padding: 15px 10px;
+}
+
+#footer {
+  min-height: 100vh;
+  background-color: #303030;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 15% 30px 80px;
+  color: white;
+
+}
+
+#col-f1 {
+  flex-basis: 40%;
+  font-size: 23px;
+}
+
+#col-f2 a,
+#col-f3 a,
+#col-f4 a {
+  font-size: 23px;
+}
+
+h1 {
+  font-family: Grand hotel;
+  font-weight: normal;
+  font-size: 124px;
+  color: #ffc200;
+}
+
+h2 {
+  font-family: Grand hotel;
+  font-weight: normal;
+  font-size: 100px;
+}
+
+h3 {
+  font-family: Grand hotel;
+  font-weight: normal;
+  font-size: 75px;
+}
+
+.p-30 {
+  font-size: 30px;
+  color: white;
+}
+
+.p-45 {
+  font-size: 45px;
+}
+
+p {
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+@media screen and (max-width:1230px) {
+  #hero .text {
+    top: 20%;
+    width: 40%;
+    left: 50%;
+  }
+}
+
+@media screen and (max-width:1098px) {
+  #navigation {
+    gap: 30px;
+  }
+
+  #oritental-section {
+    grid-template-columns: 50% 60%;
+  }
+
+  #oritental-section .text {
+    justify-self: right;
+  }
+}
+
+@media screen and (max-width:1023px) {
+  #hero {
+    background: url('images/subsricbe-section.png') no-repeat #303030;
+    background-size: contain;
+  }
+
+  #hero .text {
+    text-align: center;
+    width: 100%;
+    top: 15%;
+    left: 0;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .card-group {
+    display: block;
+  }
+
+  #oritental-section {
+    display: block;
+    background: #303030;
+  }
+
+  #chicken-section {
+    display: block;
+    background: #303030;
+  }
+
+  .image {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .circle-card {
+    width: 10%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  #discription-section .text {
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  #footer {
+    display: block;
+  }
+
+  #col-f1,
+  #col-f2,
+  #col-f3,
+  #col-f4 {
+    margin-bottom: 50px;
+  }
+
+  .input {
+    width: 100%;
+  }
+}
